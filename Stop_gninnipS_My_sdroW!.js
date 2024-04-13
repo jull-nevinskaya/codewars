@@ -9,7 +9,7 @@
 // "This is another test" --> "This is rehtona test"
 
 function spinWords(string){
-   let arr = str.split(' ');
+   let arr = string.split(' ');
    let result = [];
 
    for (let word of arr) {
@@ -21,6 +21,12 @@ function spinWords(string){
    }
    return result.join(" ");
 }
+
+//The second variant
+// function spinWords(string){
+//    let result = string.split(' ').map((val) => val.length > 4 ? [...val].reverse().join('') : val);
+//    return result.join(" ");
+// }
 
 let str = "Welcome my dear son";
 console.log(spinWords(str));
